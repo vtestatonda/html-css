@@ -1,0 +1,99 @@
+body{
+	margin: 0;
+	/*por default viene con un margin, tenemos que ponerlo a 0*/
+}
+
+.banner-wrap { 
+	 background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://source.unsplash.com/featured/sea");
+ 	/*imagen del fondo, le damos un degradado por si el fondo es blanco y la letra no se puede ver*/
+
+	/* forma para colocar solo la imagen: background-image: url(https://images.unsplash.com/photo-1651438244003-d87dc2a3be61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80);*/
+   
+    background-size: cover;
+    /*voy a cubrir todo el contenido*/
+    background-position: center;
+    padding: 150px 0 100px 0;
+     /*espacio desde arriba 150 derecha 0 abajo 100 izquierda 0*/
+    text-align: center;
+    /*texto se alinea al centro*/
+}
+
+h1{ 
+	color: white;
+    font-size: 45px;
+	/*tamaño de fuente*/
+    margin: 0;
+    /*el h1 por default viene con un margin, por eso colocamos 0 para que no erede otro */
+    font-weight: bold;
+}
+
+.banner-wrap p{
+	color: white;
+    font-size: 24px;
+    opacity: 0.85;
+  	/*le da otra opacidad*/
+}
+
+button{
+	background-color: #1A48E3;
+    color: white;
+    padding: 16px 48px;
+ 	/*el texto del boton no va pequedo al bord*/
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+    /*tiempo en que tarda en aparecer, 3segundos*/
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    /*sacamos el borde por default del button*/
+}
+
+.cards-wrap{
+    width: 900px;
+    margin: 60px auto;
+    /*significa centrado*/
+}
+
+.cards-container{
+	display:  flex;
+	/*la propiedad es flex*/
+	flex-direction: row;
+	/*la direccion del flex es de izquierda a derecha*/
+	align-items: center;
+	justify-content: space-between; 
+	/*Entre los contenedores tengan el mismo espacio*/
+
+}
+
+.card{
+	background: white;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 24px;
+    margin: 8px;
+    flex-grow: 1;
+}
+
+.card img{
+	width: 100%;
+}
+
+footer {
+	    background: #404042;
+    color: white;
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+}
+
+.footer p{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
